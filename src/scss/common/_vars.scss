@@ -1,4 +1,16 @@
-$_main_color: #242424;
-$_main_bg_color: rgba(255, 255, 255, 0.87);
-$_header_color: #747bff;
-$_header_accent_color: red;
+$_main_color: rgb(0, 31, 111);
+$_white_color: rgb(255, 255, 255);
+$_main_bg_color: linear-gradient(
+  0deg,
+  rgb(204, 216, 92),
+  rgb(172, 227, 241) 30%,
+  rgb(133, 208, 246) 50.054%,
+  rgb(66, 163, 247) 71.5%,
+  rgb(8, 91, 218) 94.5%
+);
+$_blue_gradient: linear-gradient(
+  180deg,
+  rgb(111, 231, 255) -35%,
+  rgb(57, 162, 224) 100%
+);
+$_blue_transparency_06: rgba(8, 91, 218, 0.6);

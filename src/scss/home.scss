@@ -1,0 +1,48 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 108px 0 20px 0;
+
+  position: relative;
+  background-image: url('../img/homeBcgImg/mobHero.png');
+  background-position: top;
+  background-position: calc(50% + 78px) -70px;
+  background-size: 388px;
+  background-repeat: no-repeat;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 244px;
+  color: $_white_color;
+
+  @include media(desktop) {
+    width: 1120px;
+  }
+}
+.title {
+  margin-bottom: 32px;
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  color: $_white_color;
+  margin-bottom: 40px;
+}
+
+.googlePlay {
+  width: 152px;
+  height: 44px;
+  border-radius: 4px;
+  background: transparent;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.googlePlay:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
