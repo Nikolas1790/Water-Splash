@@ -5,14 +5,28 @@
   padding: 108px 0 20px 0;
 
   position: relative;
-  background-image: url('../img/homeBcgImg/mobHero.png');
+  background-image: image-set(
+    url('../img/homeBgImg/mobHero.png') 1x,
+    url('../img/homeBgImg/mobHero@2x.png') 2x
+  );
   background-position: top;
   background-position: calc(50% + 78px) -70px;
   background-size: 388px;
   background-repeat: no-repeat;
+
+  @include media(desktop) {
+    padding: 315px 0 200px 0;
+    background-image: image-set(
+      url('../img/homeBgImg/deskHero.png') 1x,
+      url('../img/homeBgImg/deskHero@2x.png') 2x
+    );
+    background-position: calc(50% + 248px) 210px;
+    background-size: 494px;
+  }
 }
 
 .content {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,11 +35,31 @@
   color: $_white_color;
 
   @include media(desktop) {
-    width: 1120px;
+    width: 1119px;
+    align-items: start;
   }
 }
 .title {
   margin-bottom: 32px;
+  @include media(desktop) {
+    margin-bottom: 40px;
+  }
+}
+.mobileTitle {
+  width: 200px;
+  height: 111px;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.desktopTitle {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    width: 290px;
+    height: 162px;
+  }
 }
 
 .text {
@@ -33,6 +67,12 @@
   text-align: center;
   color: $_white_color;
   margin-bottom: 40px;
+
+  @include media(desktop) {
+    text-align: start;
+    width: 410px;
+    margin-bottom: 60px;
+  }
 }
 
 .googlePlay {
@@ -40,9 +80,45 @@
   height: 44px;
   border-radius: 4px;
   background: transparent;
-  transition: box-shadow 0.3s ease-in-out;
+  // transition: box-shadow 0.3s ease-in-out;
+  @include media(desktop) {
+    width: 249px;
+    height: 72px;
+  }
 }
 
-.googlePlay:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+.mobGooglePlay {
+  width: 152px;
+  height: 44px;
+  border-radius: 4px;
+  // background: transparent;
+  @include media(desktop) {
+    display: none;
+  }
 }
+
+.deskGooglePlay {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    width: 249px;
+    height: 72px;
+    border-radius: 10px;
+  }
+}
+
+.chipmunk {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    right: 360px;
+    width: 263px;
+    height: 419px;
+  }
+}
+
+// .googlePlay:hover {
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+// }
