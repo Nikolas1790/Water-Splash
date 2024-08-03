@@ -1,0 +1,80 @@
+.burger {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: $_blue_transparency_06;
+}
+.burgerContainer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background-color: $_blue_transparency_06;
+}
+.burgerTitleContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 40;
+  width: 224px;
+  height: 40px;
+  border: 0px solid $_blue_translucent;
+
+  border-radius: 51px;
+
+  background: $_blue_burder;
+}
+.burgerTitleBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px solid $_blue_translucent;
+  border-radius: 51px;
+  width: 213px;
+  height: 29px;
+  background: $_blue_combi;
+}
+
+.burgerBlock {
+  position: relative;
+  width: 275px;
+  height: 351px;
+  border-radius: 38px;
+  border: 2px solid $_blue_translucent;
+  background: $_blue_burder;
+  margin-top: 20px;
+}
+.burgerBlockMain {
+  border: 2px solid $_blue_universal;
+  border-radius: 38px 38px 23px 23px;
+  background: $_white_color;
+  width: 257px;
+  height: 300px;
+  margin: 9px 0 0 8px;
+}
+.burgerTitle {
+  // position: absolute;
+  // top: 10px;
+  // left: 50%;
+  // transform: translateX(-50%);
+  color: $_white_color;
+  font-family: PoetsenOne;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.burgerCard {
+  width: 286px;
+  height: 385px;
+  // height: 364px;
+}

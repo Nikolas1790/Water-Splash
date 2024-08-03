@@ -13,4 +13,14 @@ $_blue_gradient: linear-gradient(
   rgb(111, 231, 255) -35%,
   rgb(57, 162, 224) 100%
 );
+$_blue_combi: linear-gradient(360deg, #09589d 18.4%, #16007a 100%);
 $_blue_transparency_06: rgba(8, 91, 218, 0.6);
+
+$_blue_burder: linear-gradient(
+  180deg,
+  #70e8ff 0%,
+  #39a1e0 91.15%,
+  #3597d6 100%
+);
+$_blue_translucent: rgba(34, 104, 164, 0.5);
+$_blue_universal: rgb(76, 182, 222);

@@ -7,6 +7,9 @@
   background: $_blue_transparency_06;
   padding: 20px 0;
   width: 100%;
+  @include media(desktop) {
+    padding: 36px 0 16px 0;
+  }
 }
 
 .header-content {
@@ -20,10 +23,35 @@
   }
 }
 
-.menu-button {
+.logo {
+  width: 85px;
+  height: 29px;
+
+  @include media(desktop) {
+    width: 185px;
+    height: 48px;
+  }
+}
+
+.menuButton {
   background: transparent;
   border: none;
   outline: none;
   fill: red;
   stroke: blue;
+
+  @include media(desktop) {
+    display: none;
+  }
 }
+// .navList {
+//   display: none;
+//   @include media(desktop) {
+//     display: flex;
+//     gap: 41px;
+//     line-height: 24px;
+//     letter-spacing: 0%;
+//     font-family: PoetsenOne;
+//     color: $_white_color;
+//   }
+// }

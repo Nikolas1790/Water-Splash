@@ -20,8 +20,8 @@
       url('../img/homeBgImg/deskHero.png') 1x,
       url('../img/homeBgImg/deskHero@2x.png') 2x
     );
-    background-position: calc(50% + 248px) 210px;
-    background-size: 494px;
+    background-position: calc(50% + 318px) 190px;
+    background-size: 524px;
   }
 }
 
@@ -65,6 +65,7 @@
 .text {
   width: 100%;
   text-align: center;
+  line-height: 1.8;
   color: $_white_color;
   margin-bottom: 40px;
 
@@ -75,23 +76,23 @@
   }
 }
 
-.googlePlay {
-  width: 152px;
-  height: 44px;
-  border-radius: 4px;
-  background: transparent;
-  // transition: box-shadow 0.3s ease-in-out;
-  @include media(desktop) {
-    width: 249px;
-    height: 72px;
-  }
-}
+// .googlePlay {
+//   width: 152px;
+//   height: 44px;
+//   border-radius: 4px;
+//   background: transparent;
+
+//   @include media(desktop) {
+//     width: 249px;
+//     height: 72px;
+//   }
+// }
 
 .mobGooglePlay {
   width: 152px;
   height: 44px;
   border-radius: 4px;
-  // background: transparent;
+  transition: box-shadow 0.3s ease-in-out;
   @include media(desktop) {
     display: none;
   }
@@ -104,7 +105,12 @@
     width: 249px;
     height: 72px;
     border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
   }
+}
+.mobGooglePlay:hover,
+.deskGooglePlay:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .chipmunk {
@@ -112,13 +118,9 @@
   @include media(desktop) {
     display: block;
     position: absolute;
-    bottom: -100px;
-    right: 360px;
-    width: 263px;
-    height: 419px;
+    bottom: -120px;
+    right: 280px;
+    width: 283px;
+    height: 448px;
   }
 }
-
-// .googlePlay:hover {
-//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-// }
