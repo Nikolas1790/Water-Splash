@@ -8,8 +8,7 @@
     "build": "vite build --base=/Water-Splash/",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "netlify deploy -p",
-    "sass": "sass --watch scss/styles.scss:public/css/styles.css"
+    "deploy": "netlify deploy -p"
   },
   "devDependencies": {
     "glob": "^8.1.0",

@@ -1,5 +1,5 @@
 .burger {
-  display: flex;
+  display: none;
   justify-content: center;
   position: fixed;
   width: 100%;
@@ -8,6 +8,9 @@
   top: 0;
   left: 0;
   background-color: $_blue_transparency_06;
+  @include media(desktop) {
+    display: none;
+  }
 }
 .burgerContainer {
   display: flex;
@@ -20,8 +23,15 @@
   left: 0;
   background-color: $_blue_transparency_06;
 }
+.sharedContainer {
+  position: relative;
+  height: 351px;
+}
+
 .burgerTitleContainer {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,10 +73,6 @@
   margin: 9px 0 0 8px;
 }
 .burgerTitle {
-  // position: absolute;
-  // top: 10px;
-  // left: 50%;
-  // transform: translateX(-50%);
   color: $_white_color;
   font-family: PoetsenOne;
   font-weight: 400;
@@ -76,5 +82,39 @@
 .burgerCard {
   width: 286px;
   height: 385px;
-  // height: 364px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 50;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  overflow: hidden;
+}
+
+.closeBtnImage,
+.hoverBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.hoverBtn {
+  display: block;
+  opacity: 0;
+}
+
+.defaultBtn:hover {
+  opacity: 0;
+}
+
+.closeBtn:hover .hoverBtn {
+  opacity: 1;
 }

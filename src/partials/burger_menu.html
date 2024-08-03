@@ -1,15 +1,28 @@
-<div class="burger">
+<div class="burger js-menu-container">
   <div class="burgerContainer">
-    <div class="burgerTitleContainer">
-      <div class="burgerTitleBlock">
-        <h2 class="burgerTitle">Memu</h2>
+    <div class="sharedContainer">
+      <div class="burgerTitleContainer">
+        <div class="burgerTitleBlock">
+          <h2 class="burgerTitle">Memu</h2>
+        </div>
       </div>
-    </div>
-    <div class="burgerBlock">
-      <div class="burgerBlockMain">
-        <!-- <h2 class="burgerTitle">Memu</h2> -->
-        <load ="./components/navList.html" />
-        <!-- <img src="../img/icons/Card.svg" alt="Описание SVG" class="burgerCard" /> -->
+      <div class="burgerBlock">
+        <div class="burgerBlockMain">
+          <load ="./components/navList.html" />
+          <button class="closeBtn">
+            <img
+              src="../img/closeBtn/closeBtn.png"
+              srcset="../img/closeBtn/closeBtn@2x.png 2x"
+              alt="defaultBtn js-close-menu"
+            />
+            <img
+              src="../img/closeBtn/closeBtnHover.png"
+              srcset="../img/closeBtn/closeBtnHover@2x.png 2x"
+              alt="close button"
+              class="hoverBtn js-close-menu"
+            />
+          </button>
+        </div>
       </div>
     </div>
   </div>
