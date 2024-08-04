@@ -1,14 +1,43 @@
 .footer {
-  padding: 20px 0;
-}
-
-.footer-block {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-
+  // font-family: Roboto;
+  padding: 16px 0;
   @include media(desktop) {
-    justify-content: flex-end;
+    padding: 20px 0;
   }
+}
+
+.footerContainer {
+  width: 280px;
+  @include media(desktop) {
+    width: 1120px;
+  }
+}
+.footerNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  @include media(desktop) {
+    justify-content: end;
+    margin-bottom: 28px;
+  }
+}
+.footerNavList {
+  display: flex;
+  padding: 0;
+}
+
+// .footerNavItem {
+//   display: flex;
+// }
+
+.footerNavLink {
+  padding: 0 2px;
+}
+
+.footerCopyright {
+  text-align: center;
 }

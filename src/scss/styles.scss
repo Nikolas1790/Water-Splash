@@ -1,9 +1,15 @@
 @import './common/fonts';
 @import './header.scss';
 @import './home.scss';
+
+@import './gallery.scss';
+@import './advantages.scss';
+@import './aboutGame.scss';
+@import './FAQ.scss';
+@import './reviews.scss';
+
 @import './footer.scss';
 @import './burger.scss';
-@import './vite-promo.scss';
 @import './components/navList.scss';
 
 :root {

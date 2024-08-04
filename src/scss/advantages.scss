@@ -1,0 +1,87 @@
+.advantages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 0;
+  @include media(desktop) {
+    padding: 90px 0;
+  }
+}
+
+.advantagesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 16px;
+  width: 280px;
+  @include media(desktop) {
+    width: 936px;
+    gap: 60px;
+  }
+}
+
+.advantagesWrapperContainer {
+  position: relative;
+  @include media(desktop) {
+    width: 272px;
+  }
+}
+.advantagesCard {
+  @include media(desktop) {
+    width: 272px; //--------------------------------------------
+  }
+}
+.advantagesText {
+  position: absolute;
+  top: 32px;
+  left: 17px;
+  width: 98px;
+  // height: 65px;
+  font-family: PoetsenOne;
+  line-height: 1.1;
+  text-align: center;
+  @include media(desktop) {
+    top: 64px;
+    left: 34px;
+    font-size: 24px;
+    width: 194px;
+  }
+}
+.lowerSplashes {
+  position: absolute;
+  bottom: -8px;
+  left: 4px;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.lowerSplashesDs {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    min-width: 320px;
+    position: absolute;
+    bottom: -14px;
+    left: -24px;
+  }
+}
+.topSplashes {
+  position: absolute;
+  top: -10px;
+  left: 23px;
+  @include media(desktop) {
+    display: none;
+  }
+}
+.topSplashesDs {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 40px;
+  }
+}
