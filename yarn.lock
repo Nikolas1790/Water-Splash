@@ -168,6 +168,11 @@
   resolved "https://registry.npmjs.org/@iarna/toml/-/toml-2.2.5.tgz"
   integrity sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
 
+"@img/sharp-win32-x64@0.33.4":
+  version "0.33.4"
+  resolved "https://registry.npmjs.org/@img/sharp-win32-x64/-/sharp-win32-x64-0.33.4.tgz"
+  integrity sha512-3QLocdTRVIrFNye5YocZl+KKpYKP+fksi1QhmOArgx7GyhIbQp/WrJRu176jm8IxromS7RIkzMiMINVdBtC8Aw==
+
 "@import-maps/resolve@^1.0.1":
   version "1.0.1"
   resolved "https://registry.npmjs.org/@import-maps/resolve/-/resolve-1.0.1.tgz"
@@ -1384,11 +1389,6 @@ body-parser@1.20.2:
     raw-body "2.5.2"
     type-is "~1.6.18"
     unpipe "1.0.0"
-
-body-scroll-lock@^4.0.0-beta.0:
-  version "4.0.0-beta.0"
-  resolved "https://registry.npmjs.org/body-scroll-lock/-/body-scroll-lock-4.0.0-beta.0.tgz"
-  integrity sha512-a7tP5+0Mw3YlUJcGAKUqIBkYYGlYxk2fnCasq/FUph1hadxlTRjF+gAcZksxANnaMnALjxEddmSi/H3OR8ugcQ==
 
 boolbase@^1.0.0:
   version "1.0.0"
