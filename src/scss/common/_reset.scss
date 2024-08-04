@@ -16,6 +16,9 @@ body {
   background: $_main_bg_color;
   color: $_main_color;
   margin: 0;
+  @include media(desktop) {
+    font-size: 20px;
+  }
 }
 
 h1,
@@ -51,8 +54,29 @@ img {
   height: auto;
 }
 
-@media (min-width: 1440px) {
-  body {
-    font-size: 20px;
+// @media (min-width: 1440px) {
+//   body {
+//     font-size: 20px;
+//   }
+// }
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 0;
+  @include media(desktop) {
+    padding: 90px 0;
+  }
+}
+
+.title {
+  font-family: PoetsenOne;
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 400;
+  @include media(desktop) {
+    font-size: 64px;
+    line-height: 1.2;
   }
 }

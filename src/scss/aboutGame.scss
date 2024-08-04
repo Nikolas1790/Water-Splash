@@ -1,0 +1,89 @@
+.aboutContainer {
+  width: 274px;
+  margin-bottom: 80px;
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+    width: 1120px;
+    margin-bottom: 180px;
+  }
+}
+.aboutInfBlock {
+  display: flex;
+  align-items: center;
+  justify-content: ctnter;
+  flex-direction: column;
+  @include media(desktop) {
+    margin: auto 0;
+  }
+}
+
+.aboutTitle {
+  text-align: center;
+  width: 180px;
+  margin-bottom: 28px;
+  @include media(desktop) {
+    text-align: start;
+    width: 511px;
+    margin-bottom: 40px;
+  }
+}
+.aboutText {
+  text-align: center;
+  margin-bottom: 20px;
+  @include media(desktop) {
+    text-align: left;
+    width: 511px;
+    margin-bottom: 0px;
+  }
+}
+.cardsSplash {
+  width: 242px;
+  height: 234px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+.cardsSplashDs {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    width: 550px;
+    height: 791px;
+  }
+}
+.statisticsList {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+.statisticsItem {
+  font-weight: 500;
+  font-size: 16px;
+  @include media(desktop) {
+    font-size: 20px;
+    width: 194px;
+    text-align: center;
+  }
+}
+.statisticsDate {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: PoetsenOne;
+  margin-right: 10px;
+
+  @include media(desktop) {
+    font-size: 48px;
+    display: block;
+    margin-right: 0px;
+  }
+}
