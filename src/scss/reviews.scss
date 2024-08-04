@@ -1,0 +1,56 @@
+.disclaimerTitle {
+  font-family: PoetsenOne;
+  font-size: 32px;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 28px;
+  @include media(desktop) {
+    font-size: 48px;
+    margin-bottom: 38px;
+  }
+}
+.disclaimerSignContainer {
+  border: 1px solid #d17a49;
+  border-radius: 20px;
+  padding: 8px;
+  width: 280px;
+  height: 380px;
+  background: linear-gradient(180deg, #ffc6ae 0%, #c55516 100%);
+  @include media(desktop) {
+    border: 1px solid #d17a49;
+    border-radius: 20px;
+    width: 928px;
+    height: 382px;
+  }
+}
+.disclaimerSign {
+  border-radius: 20px;
+  padding: 18px 8px;
+  width: 264px;
+  height: 364px;
+  background: linear-gradient(360deg, #f9fafc 0%, #ffe2e2 100%);
+  @include media(desktop) {
+    padding: 40px 8px;
+    width: 912px;
+    height: 366px;
+  }
+}
+.attentionSign {
+  width: 49px;
+  margin: 0 auto 20px auto;
+  @include media(desktop) {
+    width: 116px;
+    margin-bottom: 40px;
+  }
+}
+.disclaimerText {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  width: 216px;
+  margin: 0 auto;
+  @include media(desktop) {
+    font-size: 24px;
+    width: 856px;
+  }
+}

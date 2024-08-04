@@ -33,11 +33,11 @@
   }
 }
 
-.linkToSection {
-  transition: text-shadow 0.3s ease; /* Плавный переход для тени */
-  text-shadow: none; /* Нет тени по умолчанию */
+.navLink {
+  transition: text-shadow 0.3s ease;
+  text-shadow: none;
 }
 
-.linkToSection:hover {
+.navLink:hover {
   text-shadow: 3px 8px 6px rgba(0, 0, 0, 0.3);
 }
