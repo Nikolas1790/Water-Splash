@@ -1,0 +1,41 @@
+.mobGalleryCard {
+  display: block;
+  // width: 183px;
+  // height: 326px;
+  @include media(desktop) {
+    display: none;
+    width: 383px;
+  }
+}
+
+.dsGalleryCard {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    min-width: 243px;
+    height: 433px;
+  }
+}
+
+.gallerySwiper {
+  width: 100%;
+  width: 406px;
+  @include media(desktop) {
+    // display: block;
+    // max-width: none;
+    width: 1092px;
+  }
+}
+/* Скрытие кнопок на мобильных устройствах */
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+/* Показ кнопок на десктопе */
+@media (min-width: 1024px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+  }
+}

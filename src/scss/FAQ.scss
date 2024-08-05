@@ -1,0 +1,92 @@
+.faqContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  width: 280px;
+  @include media(desktop) {
+    width: 928px;
+  }
+}
+.faqTitle {
+  margin-bottom: 28px;
+  @include media(desktop) {
+    margin-bottom: 40px;
+  }
+}
+.faqCardBlock {
+  background: linear-gradient(180deg, #6fe7ff 0%, #39a2e0 100%);
+  border: 1px solid #49a8d1;
+  border-radius: 20px;
+  padding: 8px;
+  width: 280px;
+  @include media(desktop) {
+    width: 928px;
+  }
+}
+.faqCardContentBlock {
+  border-radius: 20px;
+  padding: 8px;
+  background: linear-gradient(360deg, #f9fafc 0%, #e6f4f7 100%);
+  @include media(desktop) {
+    padding: 8px 20px 8px 8px;
+  }
+}
+.faqVisibleBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 8px;
+  // @include media(desktop) {
+  //   padding-left: 8px 20px 8px 8px;
+  // }
+}
+.faqTitleCard {
+  font-size: 14px;
+  line-height: 150%;
+  font-family: PoetsenOne;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+.faqOpen {
+  display: block;
+  min-width: 32px;
+  height: 32px;
+  @include media(desktop) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.faqClosed {
+  display: none;
+  min-width: 32px;
+  height: 32px;
+  @include media(desktop) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.faqOpen.visible,
+.faqClosed.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+.faqOpenText {
+  font-size: 14px;
+  line-height: 1.5;
+  width: 198px;
+  @include media(desktop) {
+    font-size: 24px;
+    width: 812px;
+  }
+}
+.hidden {
+  display: none;
+}

@@ -36,7 +36,6 @@
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', 'false');
-    enableBodyScroll(document.body);
   });
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
