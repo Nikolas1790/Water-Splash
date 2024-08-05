@@ -31,6 +31,16 @@
 
 .footerNavLink {
   padding: 0 2px;
+  transition: color 0.3s ease;
+}
+.footerNavLink:hover {
+  color: $_white_color;
+  filter: drop-shadow(3px 8px 6px rgba(0, 0, 0, 0.3));
+}
+.footerNavLink.disabled {
+  pointer-events: none;
+  color: $_main_color;
+  cursor: default;
 }
 
 .footerCopyright {

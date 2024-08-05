@@ -11,8 +11,14 @@
     padding: 36px 0 16px 0;
   }
 }
+.headerSecondary {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+  }
+}
 
-.header-content {
+.headerContent {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,6 +41,11 @@
 .logo:hover {
   transform: scale(1.05);
   filter: drop-shadow(3px 8px 6px rgba(0, 0, 0, 0.3));
+}
+.disabled {
+  color: $_main_color;
+  pointer-events: none;
+  cursor: default;
 }
 
 .menuButton {
