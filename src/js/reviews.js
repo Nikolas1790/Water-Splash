@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const swiper = new Swiper('.mySwiper', {
+  const swiper = new Swiper('.swiperBlock', {
     slidesPerView: 1.5,
-    spaceBetween: 20,
+    spaceBetween: 40,
     loop: true,
     centeredSlides: true,
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-btn-next',
+      prevEl: '.swiper-btn-prev',
     },
     touchRatio: 1,
     breakpoints: {
@@ -15,13 +15,12 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 2,
         slidesOffsetBefore: -35,
       },
-      406: {
+      440: {
         slidesPerView: 2,
-        slidesOffsetBefore: -100,
+        slidesOffsetBefore: -120,
       },
-      1444: {
-        slidesPerView: 4,
-        slidesOffsetBefore: -130,
+      1440: {
+        slidesPerView: 3,
       },
     },
   });

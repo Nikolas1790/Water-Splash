@@ -1,118 +1,120 @@
 <section id="gallery" class="section">
-  <div class="swiper mySwiper gallerySwiper">
-    <div class="swiper-wrapper mob">
-      <img
-        src="../img/gallery/mobPic1.jpg"
-        srcset="../img/gallery/mobPic1@2x.jpg 2x"
-        alt=" first cover of the game"
-        class="swiper-slide mobGalleryCard"
-      />
-
-      <img
-        src="../img/gallery/mobPic2.jpg"
-        srcset="../img/gallery/mobPic2@2x.jpg 2x"
-        alt="second cover of the game"
-        class="swiper-slide mobGalleryCard"
-      />
-
-      <img
-        src="../img/gallery/mobPic3.jpg"
-        srcset="../img/gallery/mobPic3@2x.jpg 2x"
-        alt="third cover of the game"
-        class="swiper-slide mobGalleryCard"
-      />
-
-      <img
-        src="../img/gallery/mobPic4.jpg"
-        srcset="../img/gallery/mobPic4@2x.jpg 2x"
-        alt="fourth cover of the game"
-        class="swiper-slide mobGalleryCard"
-      />
-
-      <img
-        src="../img/gallery/mobPic5.jpg"
-        srcset="../img/gallery/mobPic5@2x.jpg 2x"
-        alt="fifth cover of the game"
-        class="swiper-slide mobGalleryCard"
-      />
-
-      <img
-        src="../img/gallery/mobPic6.jpg"
-        srcset="../img/gallery/mobPic6@2x.jpg 2x"
-        alt="sixth cover of the game"
-        class="swiper-slide mobGalleryCard"
-      />
-
-      <div class="swiper-slide dsGalleryCard">
-        <img
-          src="../img/gallery/dsPic1.jpg"
-          srcset="../img/gallery/dsPic1@2x.jpg 2x"
-          alt=" first cover of the game"
-        />
-      </div>
-      <div class="swiper-slide dsGalleryCard">
-        <img
-          src="../img/gallery/dsPic2.jpg"
-          srcset="../img/gallery/dsPic2@2x.jpg 2x"
-        />
-      </div>
-      <div class="swiper-slide dsGalleryCard">
-        <img
-          src="../img/gallery/dsPic3.jpg"
-          srcset="../img/gallery/dsPic3@2x.jpg 2x"
-          alt="third cover of the game"
-        />
-      </div>
-      <div class="swiper-slide dsGalleryCard">
-        <img
-          src="../img/gallery/dsPic4.jpg"
-          srcset="../img/gallery/dsPic4@2x.jpg 2x"
-          alt="fourth cover of the game"
-        />
-      </div>
-      <div class="swiper-slide dsGalleryCard">
-        <img
-          src="../img/gallery/dsPic5.jpg"
-          srcset="../img/gallery/dsPic5@2x.jpg 2x"
-          alt="fifth cover of the game"
-        />
-      </div>
-      <div class="swiper-slide dsGalleryCard">
-        <img
-          src="../img/gallery/dsPic6.jpg"
-          srcset="../img/gallery/dsPic6@2x.jpg 2x"
-          alt="sixth cover of the game"
-        />
+  <div class="gallaryContainerSwiper">
+    <div class="swiper mySwiper gallerySwiper">
+      <div class="swiper-wrapper">
+        <picture class="swiper-slide galleryPicture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ../img/gallery/dsBlast.jpg,
+              ../img/gallery/dsBlast@2x.jpg 2x
+            " />
+          <img
+            src="../img/gallery/mobBlast.jpg"
+            srcset="
+              ../img/gallery/mobBlast.jpg,
+              ../img/gallery/mobBlast@2x.jpg 2x
+            "
+            alt="mob blast"
+        /></picture>
+        <picture class="swiper-slide galleryPicture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ../img/gallery/dsSave.jpg,
+              ../img/gallery/dsSave@2x.jpg 2x
+            " />
+          <img
+            src="../img/gallery/mobSave.jpg"
+            srcset="
+              ../img/gallery/mobSave.jpg,
+              ../img/gallery/mobSave@2x.jpg 2x
+            "
+            alt="mob blast"
+        /></picture>
+        <picture class="swiper-slide galleryPicture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="../img/gallery/dsPop.jpg, ../img/gallery/dsPop@2x.jpg 2x" />
+          <img
+            src="../img/gallery/mobPop.jpg"
+            srcset="../img/gallery/mobPop.jpg, ../img/gallery/mobPop@2x.jpg 2x"
+            alt="mob blast"
+        /></picture>
+        <picture class="swiper-slide galleryPicture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ../img/gallery/dsMatch.jpg,
+              ../img/gallery/dsMatch@2x.jpg 2x
+            " />
+          <img
+            src="../img/gallery/mobMatch.jpg"
+            srcset="
+              ../img/gallery/mobMatch.jpg,
+              ../img/gallery/mobMatch@2x.jpg 2x
+            "
+            alt="mob blast"
+        /></picture>
+        <picture class="swiper-slide galleryPicture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ../img/gallery/dsExplore.jpg,
+              ../img/gallery/dsExplore@2x.jpg 2x
+            " />
+          <img
+            src="../img/gallery/mobExplore.jpg"
+            srcset="
+              ../img/gallery/mobExplore.jpg,
+              ../img/gallery/mobExplore@2x.jpg 2x
+            "
+            alt="mob blast"
+        /></picture>
+        <picture class="swiper-slide galleryPicture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ../img/gallery/dsDefeat.jpg,
+              ../img/gallery/dsDefeat@2x.jpg 2x
+            " />
+          <img
+            src="../img/gallery/mobDefeat.jpg"
+            srcset="
+              ../img/gallery/mobDefeat.jpg,
+              ../img/gallery/mobDefeat@2x.jpg 2x
+            "
+            alt="mob blast"
+        /></picture>
       </div>
     </div>
-
-    <div class="swiper-pagination"></div>
-    <button class="closeBtn">
+    <button class="swiper-button-next nextButtonN">
       <img
         src="../img/navBtn/navBtn.png"
         srcset="../img/navBtn/navBtn@2x.png 2x"
         alt="swiper button next"
-        class="swiper-button-next"
+        class="imgButtonNext normal"
       />
-      <!-- <img
-        src="../img/navBtn/navBtnHover.png"
-        srcset="../img/navBtn/navBtnHover@2x.png 2x"
-        alt="swiper button next"
-        class="swiper-button-next"
-      /> -->
-    </button>
-    <button class="closeBtn">
-      <!-- <img
-        src="../img/navBtn/navBtn.png"
-        srcset="../img/navBtn/navBtn@2x.png 2x"
-        alt="swiper button prev"
-        class="swiper-button-next"
-      /> -->
       <img
         src="../img/navBtn/navBtnHover.png"
         srcset="../img/navBtn/navBtnHover@2x.png 2x"
+        alt="swiper button next"
+        class="imgButtonNext hover"
+      />
+    </button>
+
+    <button class="swiper-button-prev prewButtonP">
+      <img
+        src="../img/navBtn/navBtn.png"
+        srcset="../img/navBtn/navBtn@2x.png 2x"
         alt="swiper button prev"
-        class="swiper-button-next"
+        class="imgPrewButton normal"
+      />
+      <img
+        src="../img/navBtn/navBtnHover.png"
+        srcset="../img/navBtn/navBtnHover@2x.png 2x"
+        alt="swiper button next"
+        class="imgPrewButton hover"
       />
     </button>
   </div>

@@ -1,41 +1,64 @@
-.mobGalleryCard {
-  display: block;
-  // width: 183px;
-  // height: 326px;
+.gallaryContainerSwiper {
+  position: relative;
   @include media(desktop) {
-    display: none;
-    width: 383px;
+    width: 1202px;
   }
 }
-
-.dsGalleryCard {
-  display: none;
-  @include media(desktop) {
-    display: block;
-    min-width: 243px;
-    height: 433px;
-  }
-}
-
 .gallerySwiper {
-  width: 100%;
-  width: 406px;
+  width: 386px;
   @include media(desktop) {
-    // display: block;
-    // max-width: none;
     width: 1092px;
   }
 }
-/* Скрытие кнопок на мобильных устройствах */
-.swiper-button-prev,
-.swiper-button-next {
-  display: none;
+.galleryPicture {
+  min-width: 183px;
+  height: 327px;
+  @include media(desktop) {
+    min-width: 243px;
+    height: 434px;
+  }
+}
+.nextButtonN,
+.prewButtonP {
+  display: none !important;
+  @include media(desktop) {
+    display: block !important;
+    position: absolute;
+    min-width: 91px;
+    min-height: 85px;
+    background: transparent;
+    z-index: 60;
+    top: 120px;
+  }
+}
+.nextButtonN {
+  right: -130px;
+  margin-right: -60px;
+}
+.prewButtonP {
+  left: -230px;
+  margin-left: -60px;
+  transform: rotate(180deg);
+}
+.normal,
+.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  height: 100%;
 }
 
-/* Показ кнопок на десктопе */
-@media (min-width: 1024px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: block;
-  }
+.hover {
+  opacity: 0;
+}
+.nextButtonN:hover .hover,
+.prewButtonP:hover .hover {
+  opacity: 1;
+}
+
+.nextButtonN:hover .normal,
+.prewButtonP:hover .normal {
+  opacity: 0;
 }

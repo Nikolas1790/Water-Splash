@@ -1,3 +1,105 @@
+.reviesContainerSwiper {
+  position: relative;
+}
+.reviewsSwiper {
+  width: 440px;
+  margin-bottom: 80px;
+  @include media(desktop) {
+    width: 1080px;
+    margin-bottom: 180px;
+  }
+}
+.leterContainer {
+  width: 200px;
+  height: 232px;
+  @include media(desktop) {
+    width: 320px;
+    height: 365px;
+  }
+}
+.letterBlock {
+  position: relative;
+  width: 200px;
+  height: 180px;
+  margin-bottom: 12px;
+  @include media(desktop) {
+    width: 320px;
+    height: 288px;
+  }
+}
+.textInLetter {
+  position: absolute;
+  top: 40px;
+  left: 23px;
+  z-index: 10;
+  width: 155px;
+  text-align: center;
+  @include media(desktop) {
+    width: 253px;
+    top: 80px;
+    left: 34px;
+    text-align: left;
+    line-height: 1.5;
+  }
+}
+.infCardContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+.cardName {
+  font-family: PoetsenOne;
+  line-height: 1.1;
+  margin-bottom: 4px;
+  @include media(desktop) {
+    margin-bottom: 8px;
+  }
+}
+.nextBtn,
+.prewBtn {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    width: 91px;
+    height: 85px;
+    background: transparent;
+    z-index: 60;
+    top: 120px;
+  }
+}
+.nextBtn {
+  right: -130px;
+}
+.prewBtn {
+  left: -130px;
+  transform: rotate(180deg);
+}
+.normal,
+.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.hover {
+  opacity: 0;
+}
+.nextBtn:hover .hover,
+.prewBtn:hover .hover {
+  opacity: 1;
+}
+
+.nextBtn:hover .normal,
+.prewBtn:hover .normal {
+  opacity: 0;
+}
 .disclaimerTitle {
   font-family: PoetsenOne;
   font-size: 32px;
@@ -15,6 +117,7 @@
   padding: 8px;
   width: 280px;
   height: 380px;
+  margin: 0 auto;
   background: linear-gradient(180deg, #ffc6ae 0%, #c55516 100%);
   @include media(desktop) {
     border: 1px solid #d17a49;

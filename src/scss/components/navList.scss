@@ -28,11 +28,18 @@
   font-family: PoetsenOne;
   font-size: 18px;
   line-height: 1.5;
+
   @include media(desktop) {
     display: none;
   }
 }
+.burger .navLink {
+  color: $_main_color;
 
+  @include media(desktop) {
+    display: none;
+  }
+}
 .navLink {
   transition: text-shadow 0.3s ease;
   text-shadow: none;
