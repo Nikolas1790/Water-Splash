@@ -39,8 +39,8 @@
   }
 }
 .cardsSplash {
-  width: 242px !important;
-  height: 234px !important;
+  width: 242px;
+  min-height: 234px;
   margin: 0 auto;
 
   @include media(desktop) {
