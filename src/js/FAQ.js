@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const openBtn = block.querySelector('.openBtn');
     const closeBtn = block.querySelector('.closeButton');
     const faqText = block.querySelector('.faqOpenText');
-    const faqTitleCard = block.querySelector('.faqTitleCard');
 
     const toggleFAQ = () => {
       const isOpen = !faqText.classList.contains('hidden');
@@ -17,6 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     openBtn.addEventListener('click', toggleFAQ);
     closeBtn.addEventListener('click', toggleFAQ);
-    faqTitleCard.addEventListener('click', toggleFAQ);
+    block.addEventListener('click', event => {
+      if (!event.target.closest('.cardBtn')) {
+        toggleFAQ();
+      }
+    });
   });
 });
