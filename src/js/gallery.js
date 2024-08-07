@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 2,
         slidesOffsetBefore: -100,
       },
-      1444: {
+      1440: {
         slidesPerView: 4,
         slidesOffsetBefore: -130,
       },
