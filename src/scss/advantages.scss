@@ -16,8 +16,11 @@
   }
 }
 .advantagesCard {
+  width: 132px;
+  height: 153px;
   @include media(desktop) {
-    width: 272px; //--------------------------------------------
+    width: 272px;
+    height: 316px;
   }
 }
 .advantagesText {
@@ -39,6 +42,8 @@
   position: absolute;
   bottom: -8px;
   left: 4px;
+  width: 124px;
+  height: 35px;
   @include media(desktop) {
     display: none;
   }
@@ -53,12 +58,16 @@
     position: absolute;
     bottom: -14px;
     left: -24px;
+    width: 320px;
+    height: 78px;
   }
 }
 .topSplashes {
   position: absolute;
   top: -10px;
   left: 23px;
+  width: 86px;
+  height: 39px;
   @include media(desktop) {
     display: none;
   }
@@ -71,5 +80,7 @@
     position: absolute;
     top: -20px;
     left: 40px;
+    width: 192px;
+    height: 82px;
   }
 }

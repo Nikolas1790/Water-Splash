@@ -88,7 +88,8 @@
   visibility: hidden;
 }
 
-.menuButton:hover .activeBurgerIcon {
+.menuButton:hover .activeBurgerIcon,
+.menuButton:focus .activeBurgerIcon {
   width: 43px;
   height: 43px;
   opacity: 1;

@@ -8,10 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
     '.footerNavLink[href="./page-3.html"]'
   );
 
-  console.log('Privacy Link: ', privacyLink);
-  console.log('Terms Link: ', termsLink);
-  console.log('Current Path: ', currentPath);
-
   if (currentPath.endsWith('/page-2.html') && privacyLink) {
     privacyLink.classList.add('disabled');
   } else if (currentPath.endsWith('/page-3.html') && termsLink) {

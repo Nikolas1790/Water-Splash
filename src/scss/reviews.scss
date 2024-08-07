@@ -27,6 +27,22 @@
     height: 288px;
   }
 }
+.letterBackground {
+  width: 200px;
+  height: 180px;
+  @include media(desktop) {
+    width: 320px;
+    height: 288px;
+  }
+}
+.reviewsUserAva {
+  width: 40px;
+  height: 40px;
+  @include media(desktop) {
+    width: 65px;
+    height: 65px;
+  }
+}
 .textInLetter {
   position: absolute;
   top: 40px;
@@ -92,7 +108,9 @@
   opacity: 0;
 }
 .nextBtn:hover .hover,
-.prewBtn:hover .hover {
+.nextBtn:focus .hover,
+.prewBtn:hover .hover,
+.prewBtn:focus .hover {
   opacity: 1;
 }
 
@@ -140,9 +158,11 @@
 }
 .attentionSign {
   width: 49px;
+  height: 44px;
   margin: 0 auto 20px auto;
   @include media(desktop) {
     width: 116px;
+    height: 102px;
     margin-bottom: 40px;
   }
 }

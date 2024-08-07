@@ -1,29 +1,21 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const buttons = document.querySelectorAll('.cardBtn');
+document.addEventListener('DOMContentLoaded', () => {
+  const faqBlocks = document.querySelectorAll('.faqCardContentBlock');
 
-  buttons.forEach(button => {
-    const textElement = button.parentNode.nextElementSibling;
-    const openIcon = button.querySelector('.faqOpen');
-    const closedIcon = button.querySelector('.faqClosed');
+  faqBlocks.forEach(block => {
+    const openBtn = block.querySelector('.openBtn');
+    const closeBtn = block.querySelector('.closeButton');
+    const faqText = block.querySelector('.faqOpenText');
 
-    if (textElement.classList.contains('hidden')) {
-      openIcon.style.display = 'block';
-      closedIcon.style.display = 'none';
-    } else {
-      openIcon.style.display = 'none';
-      closedIcon.style.display = 'block';
-    }
+    openBtn.addEventListener('click', () => {
+      faqText.classList.remove('hidden');
+      closeBtn.classList.remove('hidden');
+      openBtn.classList.add('hidden');
+    });
 
-    button.addEventListener('click', function () {
-      textElement.classList.toggle('hidden');
-
-      if (textElement.classList.contains('hidden')) {
-        openIcon.style.display = 'block';
-        closedIcon.style.display = 'none';
-      } else {
-        openIcon.style.display = 'none';
-        closedIcon.style.display = 'block';
-      }
+    closeBtn.addEventListener('click', () => {
+      faqText.classList.add('hidden');
+      closeBtn.classList.add('hidden');
+      openBtn.classList.remove('hidden');
     });
   });
 });
