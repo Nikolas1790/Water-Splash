@@ -29,6 +29,7 @@
   border-radius: 20px;
   padding: 8px;
   background: linear-gradient(360deg, #f9fafc 0%, #e6f4f7 100%);
+  cursor: pointer;
   @include media(desktop) {
     padding: 8px 20px 8px 8px;
   }
@@ -43,7 +44,7 @@
   font-size: 14px;
   line-height: 150%;
   font-family: PoetsenOne;
-  cursor: pointer;
+
   @include media(desktop) {
     font-size: 24px;
   }
