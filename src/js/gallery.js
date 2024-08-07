@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     spaceBetween: 20,
     loop: true,
     centeredSlides: true,
-
+    grabCursor: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
