@@ -28,15 +28,20 @@
     min-height: 85px;
     background: transparent;
     z-index: 60;
-    top: 120px;
+    // top: 120px !important;
+    top: 194px !important;
   }
 }
 .nextButtonN {
-  right: -130px;
+  // right: -130px !important;
+  right: 0px !important;
+
   margin-right: -60px;
 }
 .prewButtonP {
-  left: -230px;
+  // left: -230px !important;
+
+  left: 0px !important;
   margin-left: -60px;
   transform: rotate(180deg);
 }
