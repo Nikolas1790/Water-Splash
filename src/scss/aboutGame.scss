@@ -64,6 +64,7 @@
   @include media(desktop) {
     flex-direction: row;
     gap: 80px;
+    margin-left: 154px;
   }
 }
 .statisticsItem {
@@ -71,7 +72,7 @@
   font-size: 16px;
   @include media(desktop) {
     font-size: 20px;
-    width: 194px;
+    max-width: 194px;
     text-align: center;
   }
 }
